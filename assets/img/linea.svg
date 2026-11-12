@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 64 800 196" width="800" height="196" role="img" aria-labelledby="t">
+	<title id="t">Una sola línea continua que dibuja un bucle y un corazón</title>
+	<style>
+		path {
+			fill: none;
+			stroke: #2a3fd4;
+			stroke-width: 3;
+			stroke-linecap: round;
+			stroke-linejoin: round;
+			stroke-dasharray: 1 1;
+			stroke-dashoffset: 1;
+			animation: dibujar 3.2s cubic-bezier(.65, 0, .35, 1) .4s forwards;
+		}
+		@keyframes dibujar { to { stroke-dashoffset: 0; } }
+		@media (prefers-reduced-motion: reduce) {
+			path { animation: none; stroke-dashoffset: 0; }
+		}
+	</style>
+	<path pathLength="1" d="M20 226 C90 230 150 220 205 224 C255 228 292 182 268 150 C246 121 204 146 226 178 C246 206 300 222 352 214 C395 208 430 222 460 244 C420 212 376 170 380 128 C384 88 440 78 460 118 C480 78 536 88 540 128 C544 170 500 212 460 244 C492 232 530 220 580 222 C640 224 700 230 780 222"/>
+</svg>
